@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual env
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Data / models / outputs (do not commit)
+data/
+datasets/
+models/
+weights/
+outputs/
+assets/demo_outputs/
+
+# Secrets
+.env
