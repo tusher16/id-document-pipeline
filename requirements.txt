@@ -1,0 +1,13 @@
+# Core deps (runs deskew + optional OCR demo on macOS)
+numpy>=1.26
+opencv-python>=4.10
+Pillow>=10
+matplotlib>=3.8
+pytesseract>=0.3.10
+scikit-image>=0.22
+tqdm>=4.66
+
+# ML deps (classification/segmentation)
+tensorflow>=2.19,<2.21; platform_system != "Darwin"
+tensorflow-macos==2.16.2; platform_system == "Darwin" and platform_machine == "arm64" and python_version < "3.13"
+tensorflow-metal; platform_system == "Darwin" and platform_machine == "arm64" and python_version < "3.13"
